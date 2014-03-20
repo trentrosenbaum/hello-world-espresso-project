@@ -13,7 +13,7 @@ bin/
 gen/
 
 # generated Gradle folders
-.gradle
+.gradle/
 
 # Local configuration file (sdk path, etc)
 local.properties
