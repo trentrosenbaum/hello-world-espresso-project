@@ -65,7 +65,6 @@ public class MainActivityInstrumentationTest extends ActivityInstrumentationTest
 
         onView(withContentDescription("greeting")).check(matches(withText("Hello World")));
 
-        //onView(withContentDescription("More options")).perform(click());
         openActionBarOverflowOrOptionsMenu(this.getInstrumentation().getTargetContext());
         onView(withText(R.string.action_settings)).check(matches(isDisplayed()));
         onView(withText(R.string.action_settings)).perform(click());
@@ -73,7 +72,6 @@ public class MainActivityInstrumentationTest extends ActivityInstrumentationTest
         onData (withPreferenceKey ( "greeting_name" )).check(matches(isDisplayed()));
         onData (withPreferenceKey ( "greeting_name" )).perform(click());
 
-        //onView(withId(android.R.id.edit)).perform(click());
         onView(withId(android.R.id.edit)).perform(clearText(), typeTextIntoFocusedView("James Brown"));
         onView(withId(android.R.id.edit)).perform(closeSoftKeyboard());
         onView(withText("Cancel")).perform(click());
@@ -89,7 +87,6 @@ public class MainActivityInstrumentationTest extends ActivityInstrumentationTest
 
         onView(withContentDescription("greeting")).check(matches(withText("Hello World")));
 
-        //onView(withContentDescription("More options")).perform(click());
         openActionBarOverflowOrOptionsMenu(this.getInstrumentation().getTargetContext());
         onView(withText(R.string.action_settings)).check(matches(isDisplayed()));
         onView(withText(R.string.action_settings)).perform(click());
@@ -97,7 +94,6 @@ public class MainActivityInstrumentationTest extends ActivityInstrumentationTest
         onData (withPreferenceKey ( "greeting_name" )).check(matches(isDisplayed()));
         onData (withPreferenceKey ( "greeting_name" )).perform(click());
 
-        //onView(withId(android.R.id.edit)).perform(click());
         onView(withId(android.R.id.edit)).perform(clearText(), typeTextIntoFocusedView("James Brown"));
         onView(withId(android.R.id.edit)).perform(closeSoftKeyboard());
         onView(withText("OK")).perform(click());

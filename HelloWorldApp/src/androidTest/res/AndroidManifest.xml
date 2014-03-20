@@ -1,5 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mycompany.app.helloworld" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mycompany.app.helloworld.test"
+                    android:versionCode="1" android:versionName="1.0.0-SNAPSHOT">
 
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
 
@@ -7,6 +7,8 @@
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner" android:targetPackage="com.mycompany.app.helloworld" />
+    <instrumentation android:name="com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+                        android:targetPackage="com.mycompany.app.helloworld"
+                        android:label="Tests for com.mycompany.app.helloworld"/>
 
 </manifest>
